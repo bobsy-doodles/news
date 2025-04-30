@@ -1,0 +1,363 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global News Network</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .heading {
+            font-family: 'Playfair Display', serif;
+        }
+        .news-card {
+            transition: transform 0.3s ease;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-slate-800 text-white">
+        <div class="container mx-auto px-4 py-3 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-3 md:mb-0">
+                <h1 class="text-3xl font-bold heading">Global News Network</h1>
+            </div>
+            <nav class="flex space-x-1 md:space-x-4 text-sm md:text-base overflow-x-auto pb-2 md:pb-0 w-full md:w-auto">
+                <a href="#" class="px-3 py-2 bg-blue-600 rounded-md hover:bg-blue-700 transition">Home</a>
+                <a href="#" class="px-3 py-2 hover:bg-slate-700 rounded-md transition">Politics</a>
+                <a href="#" class="px-3 py-2 hover:bg-slate-700 rounded-md transition">Business</a>
+                <a href="#" class="px-3 py-2 hover:bg-slate-700 rounded-md transition">Technology</a>
+                <a href="#" class="px-3 py-2 hover:bg-slate-700 rounded-md transition">Science</a>
+                <a href="#" class="px-3 py-2 hover:bg-slate-700 rounded-md transition">Health</a>
+                <a href="#" class="px-3 py-2 hover:bg-slate-700 rounded-md transition">Entertainment</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breaking News Banner -->
+    <div class="bg-red-600 text-white py-2 px-4">
+        <div class="container mx-auto flex items-center overflow-hidden">
+            <span class="font-bold mr-3 whitespace-nowrap">BREAKING:</span>
+            <div class="overflow-hidden">
+                <div class="animate-marquee whitespace-nowrap">
+                    Global summit on climate change reaches historic agreement • Tech giant unveils revolutionary AI assistant • Major sports upset as underdogs win championship
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Featured Story -->
+        <section class="mb-12">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-2/3 p-6">
+                        <span class="inline-block bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold mb-3">FEATURED</span>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4 heading">Global Leaders Agree on Landmark Climate Deal</h2>
+                        <p class="text-gray-600 mb-4">After two weeks of intense negotiations, world leaders have reached a consensus on a groundbreaking climate agreement that aims to limit global warming to 1.5 degrees Celsius above pre-industrial levels.</p>
+                        <p class="text-gray-600 mb-6">The deal includes substantial financial commitments from developed nations to support climate adaptation in vulnerable countries and accelerates the timeline for phasing out fossil fuels.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <span class="mr-4">By Sarah Johnson</span>
+                            <span>2 hours ago</span>
+                        </div>
+                        <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">Read Full Story</button>
+                    </div>
+                    <div class="md:w-1/3 bg-slate-200 flex items-center justify-center p-6">
+                        <svg class="w-full h-48 md:h-full text-slate-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                            <rect x="4" y="4" width="16" height="16" rx="2" stroke-width="1"></rect>
+                            <circle cx="12" cy="10" r="3" stroke-width="1"></circle>
+                            <path d="M8 20v-1a4 4 0 014-4v0a4 4 0 014 4v1" stroke-width="1"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top Stories -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 heading border-b-2 border-slate-800 pb-2">Top Stories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Story 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden news-card">
+                    <div class="bg-slate-200 h-48 flex items-center justify-center">
+                        <svg class="w-24 h-24 text-slate-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <div class="p-4">
+                        <span class="inline-block bg-green-600 text-white px-2 py-1 rounded-full text-xs font-semibold mb-2">TECHNOLOGY</span>
+                        <h3 class="text-xl font-bold mb-2 heading">New Breakthrough in Quantum Computing</h3>
+                        <p class="text-gray-600 text-sm mb-4">Scientists have achieved a major milestone in quantum computing, creating a stable qubit that could revolutionize the field.</p>
+                        <div class="flex items-center text-xs text-gray-500">
+                            <span class="mr-3">By Michael Chen</span>
+                            <span>5 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Story 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden news-card">
+                    <div class="bg-slate-200 h-48 flex items-center justify-center">
+                        <svg class="w-24 h-24 text-slate-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="p-4">
+                        <span class="inline-block bg-yellow-600 text-white px-2 py-1 rounded-full text-xs font-semibold mb-2">BUSINESS</span>
+                        <h3 class="text-xl font-bold mb-2 heading">Markets Rally After Central Bank Announcement</h3>
+                        <p class="text-gray-600 text-sm mb-4">Global markets surged today following the central bank's decision to maintain current interest rates.</p>
+                        <div class="flex items-center text-xs text-gray-500">
+                            <span class="mr-3">By Jessica Wong</span>
+                            <span>8 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Story 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden news-card">
+                    <div class="bg-slate-200 h-48 flex items-center justify-center">
+                        <svg class="w-24 h-24 text-slate-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                        </svg>
+                    </div>
+                    <div class="p-4">
+                        <span class="inline-block bg-purple-600 text-white px-2 py-1 rounded-full text-xs font-semibold mb-2">HEALTH</span>
+                        <h3 class="text-xl font-bold mb-2 heading">New Study Reveals Benefits of Mediterranean Diet</h3>
+                        <p class="text-gray-600 text-sm mb-4">Research confirms that following a Mediterranean diet can significantly reduce the risk of heart disease and stroke.</p>
+                        <div class="flex items-center text-xs text-gray-500">
+                            <span class="mr-3">By Dr. Robert Smith</span>
+                            <span>1 day ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest News -->
+        <section>
+            <h2 class="text-2xl font-bold mb-6 heading border-b-2 border-slate-800 pb-2">Latest News</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- News Item 1 -->
+                <div class="bg-white rounded-lg shadow-md p-4 flex news-card">
+                    <div class="bg-slate-200 w-24 h-24 flex-shrink-0 rounded-md flex items-center justify-center mr-4">
+                        <svg class="w-12 h-12 text-slate-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="inline-block bg-red-600 text-white px-2 py-1 rounded-full text-xs font-semibold mb-1">POLITICS</span>
+                        <h3 class="text-lg font-bold mb-1 heading">Senate Passes Infrastructure Bill</h3>
+                        <p class="text-gray-600 text-sm mb-2">The $1.2 trillion bill aims to rebuild roads, bridges and other critical infrastructure.</p>
+                        <div class="text-xs text-gray-500">3 hours ago</div>
+                    </div>
+                </div>
+                
+                <!-- News Item 2 -->
+                <div class="bg-white rounded-lg shadow-md p-4 flex news-card">
+                    <div class="bg-slate-200 w-24 h-24 flex-shrink-0 rounded-md flex items-center justify-center mr-4">
+                        <svg class="w-12 h-12 text-slate-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="inline-block bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-semibold mb-1">SPORTS</span>
+                        <h3 class="text-lg font-bold mb-1 heading">Olympic Gold Medalist Announces Retirement</h3>
+                        <p class="text-gray-600 text-sm mb-2">After a decorated career spanning 15 years, the champion is stepping away from competition.</p>
+                        <div class="text-xs text-gray-500">5 hours ago</div>
+                    </div>
+                </div>
+                
+                <!-- News Item 3 -->
+                <div class="bg-white rounded-lg shadow-md p-4 flex news-card">
+                    <div class="bg-slate-200 w-24 h-24 flex-shrink-0 rounded-md flex items-center justify-center mr-4">
+                        <svg class="w-12 h-12 text-slate-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="inline-block bg-green-600 text-white px-2 py-1 rounded-full text-xs font-semibold mb-1">ENTERTAINMENT</span>
+                        <h3 class="text-lg font-bold mb-1 heading">Award-Winning Film Director Announces New Project</h3>
+                        <p class="text-gray-600 text-sm mb-2">The acclaimed filmmaker is set to begin production on a highly anticipated sci-fi epic.</p>
+                        <div class="text-xs text-gray-500">7 hours ago</div>
+                    </div>
+                </div>
+                
+                <!-- News Item 4 -->
+                <div class="bg-white rounded-lg shadow-md p-4 flex news-card">
+                    <div class="bg-slate-200 w-24 h-24 flex-shrink-0 rounded-md flex items-center justify-center mr-4">
+                        <svg class="w-12 h-12 text-slate-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="inline-block bg-orange-600 text-white px-2 py-1 rounded-full text-xs font-semibold mb-1">SCIENCE</span>
+                        <h3 class="text-lg font-bold mb-1 heading">Mars Rover Discovers Signs of Ancient Water</h3>
+                        <p class="text-gray-600 text-sm mb-2">New findings suggest that liquid water may have been present on the red planet longer than previously thought.</p>
+                        <div class="text-xs text-gray-500">10 hours ago</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Newsletter -->
+    <section class="bg-slate-800 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4 heading">Stay Informed</h2>
+            <p class="mb-6 max-w-2xl mx-auto">Subscribe to our newsletter to receive the latest news updates directly in your inbox.</p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
+                <input type="email" placeholder="Your email address" class="px-4 py-3 rounded-md w-full md:w-80 text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <button class="bg-blue-600 px-6 py-3 rounded-md hover:bg-blue-700 transition w-full md:w-auto">Subscribe Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 heading">Global News Network</h3>
+                    <p class="text-gray-400 text-sm">Delivering accurate, timely, and insightful news coverage from around the world.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Sections</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Politics</a></li>
+                        <li><a href="#" class="hover:text-white transition">Business</a></li>
+                        <li><a href="#" class="hover:text-white transition">Technology</a></li>
+                        <li><a href="#" class="hover:text-white transition">Science</a></li>
+                        <li><a href="#" class="hover:text-white transition">Health</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact</a></li>
+                        <li><a href="#" class="hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition">Advertise</a></li>
+                        <li><a href="#" class="hover:text-white transition">Ethics Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="bg-blue-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-900 transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="bg-pink-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-700 transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="bg-red-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-red-700 transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="text-gray-400 text-sm">Download our mobile app:</p>
+                    <div class="flex space-x-3 mt-2">
+                        <button class="bg-gray-800 px-3 py-2 rounded-md text-xs flex items-center hover:bg-gray-700 transition">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.5 12.323C17.5 13.1 17.25 13.8 16.75 14.4C16.332 14.907 15.825 15.213 15.219 15.323C15.093 15.34 14.975 15.28 14.916 15.167C14.854 15.053 14.87 14.92 14.953 14.823C15.235 14.453 15.379 14.023 15.379 13.523C15.379 12.617 14.745 11.837 13.829 11.53C13.646 11.467 13.5 11.3 13.5 11.107V5.892C13.5 5.397 13.103 5 12.608 5H5.891C5.397 5 5 5.397 5 5.891V18.108C5 18.602 5.397 19 5.891 19H12.608C13.103 19 13.5 18.603 13.5 18.108V16.891C13.5 16.74 13.578 16.599 13.705 16.526C13.833 16.453 13.991 16.46 14.112 16.543C14.717 16.933 15.43 17.133 16.164 17.133C18.431 17.133 20.263 15.301 20.263 13.034C20.263 11.082 19.018 9.43 17.229 9.05C17.094 9.017 17 8.896 17 8.757V5.891C17 4.846 16.153 4 15.108 4H8.891C7.847 4 7 4.846 7 5.891V18.108C7 19.153 7.847 20 8.891 20H15.108C16.153 20 17 19.153 17 18.108V12.323H17.5Z"></path>
+                            </svg>
+                            App Store
+                        </button>
+                        <button class="bg-gray-800 px-3 py-2 rounded-md text-xs flex items-center hover:bg-gray-700 transition">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M3.5 20.25v-16.5c0-.828.672-1.5 1.5-1.5h14c.828 0 1.5.672 1.5 1.5v16.5c0 .828-.672 1.5-1.5 1.5h-14c-.828 0-1.5-.672-1.5-1.5zm16-9.25l-3.5-2v4l3.5-2z"></path>
+                            </svg>
+                            Google Play
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-sm text-gray-400 flex flex-col md:flex-row justify-between items-center">
+                <div>© 2023 Global News Network. All rights reserved.</div>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                    <a href="#" class="hover:text-white transition">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Breaking news marquee animation
+        document.querySelector('.animate-marquee').style.animation = 'marquee 30s linear infinite';
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add click event to all category links
+            document.querySelectorAll('nav a').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    // Remove active class from all links
+                    document.querySelectorAll('nav a').forEach(l => {
+                        l.classList.remove('bg-blue-600');
+                        l.classList.add('hover:bg-slate-700');
+                    });
+                    // Add active class to clicked link
+                    this.classList.add('bg-blue-600');
+                    this.classList.remove('hover:bg-slate-700');
+                    
+                    // In a real app, this would load content for that category
+                    alert('Loading ' + this.textContent + ' content...');
+                });
+            });
+            
+            // Add click event to read full story button
+            document.querySelector('.featured button').addEventListener('click', function() {
+                alert('Loading full article...');
+            });
+            
+            // Add click event to news cards
+            document.querySelectorAll('.news-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    alert('Opening article...');
+                });
+            });
+            
+            // Add click event to newsletter subscribe button
+            document.querySelector('section.bg-slate-800 button').addEventListener('click', function() {
+                const email = document.querySelector('section.bg-slate-800 input').value;
+                if (email && email.includes('@')) {
+                    alert('Thank you for subscribing with: ' + email);
+                    document.querySelector('section.bg-slate-800 input').value = '';
+                } else {
+                    alert('Please enter a valid email address');
+                }
+            });
+        });
+        
+        // Add keyframes for marquee animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes marquee {
+                0% { transform: translateX(100%); }
+                100% { transform: translateX(-100%); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'938ad892515c715a',t:'MTc0NjA1NjAyNi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
